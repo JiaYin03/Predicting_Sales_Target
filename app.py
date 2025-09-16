@@ -29,7 +29,6 @@ if not data_path:
     st.stop()
 
 df = pd.read_csv(data_path)
-
 # column soft-fixes
 if "NetSalesValue" not in df.columns:
     for altname in ["Net Sales Value", "Net_Sales_Value", "NetSales"]:
@@ -39,7 +38,6 @@ if "NetSalesValue" not in df.columns:
 if "Year" not in df.columns:
     st.error("CSV must include 'Year'.")
     st.stop()
-
 if "MonthNum" not in df.columns:
     if "Month" in df.columns:
         month_map = {
