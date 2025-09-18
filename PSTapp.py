@@ -548,3 +548,4 @@ with right:
         )
     else:
         st.info("No entries yet. Use the forms on the left to add targets.")
+
